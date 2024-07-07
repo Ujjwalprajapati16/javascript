@@ -20,7 +20,6 @@ console.log(typeof bigInt); // bigint
 
 # Reference (Non primitive)
 
- 
 > Array, Object, Functions
 
 ```javascript
@@ -38,3 +37,28 @@ const myFunctions = function(){
 ```
 
 [video link](https://youtu.be/suMvZWjjKbo)
+
+# Stack (Primitive), Heap (Non-primitive)
+
+```javascript
+let myName = "Pikachu";
+let anotherName = "Pika";
+anotherName = "ChaiAurCode"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "Pikachu@gamail.com",
+    upi: "pika@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "Pika@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+```
+
+[Video Link](https://youtu.be/7gwc-1czolw)
