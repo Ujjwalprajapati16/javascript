@@ -7,18 +7,53 @@
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      nav {
+        margin: 10px;
+      }
+      nav a {
+        color: #ffeb3b;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      h1 {
+        margin: 20px 0;
+        font-size: 24px;
+      }
+      button {
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #e64a19;
+      }
+      button:active {
+        background-color: #d84315;
+      }
+    </style>
   </head>
-  <body style="background-color: #212121; color: #fff">
+  <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
     </nav>
 
     <h1>Start should change the Background color every second</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
-    <script src="chaiaurcode.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

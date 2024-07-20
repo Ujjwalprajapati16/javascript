@@ -7,41 +7,69 @@
     <title>Event KeyCodes</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <style>
-      table,
-      th,
-      td {
-        border: 1px solid #e7e7e7;
-      }
-      .project {
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
         background-color: #1c1c1c;
         color: #ffffff;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 1px solid #e7e7e7;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+
+      td {
+        background-color: #444;
+      }
+
+      .project {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         height: 100vh;
+        padding: 20px;
       }
 
       .color {
-        color: aliceblue;
-        display: flex;
-        flex-direction: row;
+        color: #e7e7e7;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .key {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #ffeb3b;
       }
     </style>
   </head>
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
     </nav>
     <div class="project">
       <div id="insert">
-        <div class="key">Press the key and watch magic</div>
+        <div class="key">Press a key to see the details</div>
       </div>
     </div>
-
-    <script src="./chaiaurcode.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

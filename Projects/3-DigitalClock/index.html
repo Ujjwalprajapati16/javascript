@@ -6,28 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <title>Your Local Time</title>
-    <style>
-      body {
-        background-color: #212121;
-        color: #fff;
-      }
-      .center {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      #clock {
-        font-size: 40px;
-        background-color: orange;
-        padding: 20px 50px;
-        margin-top: 10px;
-        border-radius: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="dark-theme">
     <nav>
       <a href="/" aria-current="page">Home</a>
       <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
@@ -35,7 +16,8 @@
       >
     </nav>
     <div class="center">
-      <div id="banner"><span>Your local time</span></div>
+      <button id="theme-switcher">Switch Theme</button>
+      <div id="banner"><span>Your Local Time</span></div>
       <div id="clock"></div>
     </div>
     <script src="script.js"></script>

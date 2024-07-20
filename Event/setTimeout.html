@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pikachu</h1>
+    <button type="submit" id="stop">STOP</button>
+</body>
+<script>
+    setTimeout(function() {
+        document.getElementById("stop").disabled = true;
+        alert("Pikachu has stopped moving!");
+    });
+
+    const changeText = function() {
+        const text = document.querySelector("h1").textContent;
+        document.querySelector("h1").textContent = text === "Pikachu"? "Charizard" : "Pikachu";
+    };
+</script>
+</html>
